@@ -15,24 +15,29 @@ Alumnos = ['Lupe','Ramon','Jona','Raul','Lucrecio','Armando','Josefina']
 
 print("El último alumno de la lista es: ",Alumnos[-1])
 
-#~~~ 3.- eliminar lista con ´del´ ~~~
+#~~~ 3.- eliminar lista con ´del()´ ~~~
 #Elimina el dato de la posicion indicada
 numeros = [1,2,3,4,5,6,7,8,9,10]
 del numeros[3]
 del numeros[-1]
 print(numeros)
 
-#~~~ 4.- Eliminar elementos con ´remove´ ~~
+#~~~ 4.- Eliminar elementos con ´remove()´ ~~
 #Elimina el dato con con el nombre guardado
 Alumnos2 = ['Lupe','Ramon','Jona','Raul','Lucrecio','Armando','Josefina']
 Alumnos2.remove("Jona")
 Alumnos2.remove("Armando")
 print(Alumnos2)
 
-#~~~ 5.- Eliminar elementos con ´pop´ ~~
+#~~~ 5.- Eliminar elementos con ´pop()´ ~~
 #Elimina el dato de la posicion indicado, pero lo guarda en una variable 
 colores = ["azul","rojo","amarillo","cafe","verde"]
 Eliminado = colores.pop(2)
 print(colores)
 print("El color que no esta en la lista es: " + Eliminado)
 
+#~~~ 6.- Añadir elementos con append()
+#Añade un elemento al final de la lista 
+colores2 = ["azul","rojo","amarillo","cafe","verde"]
+colores.append("Naranja")
+print(colores)
