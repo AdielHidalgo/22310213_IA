@@ -20,3 +20,9 @@ numeros = [1,2,3,4,5,6,7,8,9,10]
 del numeros[3]
 del numeros[-1]
 print(numeros)
+
+#~~~ 4.- Eliminar elementos con ´remove´ ~~
+Alumnos2 = ['Lupe','Ramon','Jona','Raul','Lucrecio','Armando','Josefina']
+Alumnos2.remove("Jona")
+Alumnos2.remove("Armando")
+print(Alumnos2)
