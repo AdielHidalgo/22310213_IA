@@ -14,3 +14,9 @@ print("\n",Automoviles[3],"\n\n\n")
 Alumnos = ['Lupe','Ramon','Jona','Raul','Lucrecio','Armando','Josefina']
 
 print("El último alumno de la lista es: ",Alumnos[-1])
+
+#~~~ 3.- eliminar lista con ´del´ ~~~
+numeros = [1,2,3,4,5,6,7,8,9,10]
+del numeros[3]
+del numeros[-1]
+print(numeros)
