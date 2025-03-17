@@ -1,7 +1,7 @@
 ####En este programa se va a trabajar con listas####
 #~~~~  1.- Introducción a las listas ~~~~
 #Un lista es una coleccion de elementos, una variable con multiples valores
-"""
+
 Automoviles = ["Nissan",'WW','BMW','Tesla']
 print(Automoviles)
 #Para imprimir un solo elemento de la lista se especifica la posicion del elemento
@@ -40,7 +40,7 @@ print("El color que no esta en la lista es: " + Eliminado)
 #Añade un elemento al final de la lista 
 colores2 = ["azul","rojo","amarillo","cafe","verde"]
 colores2.append("Naranja")
-print(colores) */
+print(colores)
 
 #~~~ 7.- Añadir elementos a una lista en la posicion indicada insert()~~
 colores3 = ["azul","rojo","amarillo","cafe","verde"]
@@ -63,7 +63,7 @@ print(colores5)
 colores6 = ["azul","rojo","amarillo","cafe","verde"]
 print(sorted(colores6))
 print(colores6)
-"""
+
 #~~~ 9.- Contar elementos de una lista con len() ~~~
 animales = ["perro", "gato", "elefante", "tigre", "león", "jirafa", "cebra", "rinoceronte", "hipopótamo", "oso",
     "lobo", "zorro", "conejo", "ardilla", "canguro", "koala", "panda", "búho", "águila", "halcón",
