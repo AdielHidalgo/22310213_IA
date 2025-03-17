@@ -71,3 +71,16 @@ if 'chicles' in Comprar:
 if 'tortillas' in Comprar:
     Dinero=Dinero-Tortillas
 print("Te queda ",Dinero," disponible")
+
+# 5.- Tips en condicionales
+#Ahorrar lineas
+x = 100
+y = 200
+
+if x < y: print('x es menor que y.')
+
+#if else en la misma linea
+x = 10000
+y = 200
+
+print('x es menor que y.') if x < y else print('x no es menor que y')
