@@ -41,7 +41,7 @@ elif Dinero >= 71:
     print("Genial traes billete pa llevarte lo que estas pensando")
 else:
     print("Sorry no te ajusta, regresa cuando traigas feria suficiente")
-"""
+
 # 3.- buscar resultados en listas y tuplas  Python
 EstatusSocial= ['Baja','MediaBaja','Media','MediaAlta','Alta']
 status=input("Dime a que estatus social perteneces: ")
@@ -51,4 +51,23 @@ if status in EstatusSocial:
     print("Perteneces a un estatus social")
 else:
     print("Eso no es un estatus social")
-
+buscar resultados en listas y tuplas  Python
+"""
+# 4.- Multiples condiciones con IF sin elif
+print("Estas en una tienda y estas pensando comprar unas papitas $20, una coca $25, unos chicles $2 y las tortillas $24")
+print("Cuentas con 200 pesos")
+Dinero=200
+Papitas=20
+Coca=25
+Chicle=2
+Tortillas=24
+Comprar = str(input("Dime que quieres comprar:  "))
+if 'papitas' in Comprar:
+    Dinero= Dinero-Papitas
+if 'coca' in Comprar:
+    Dinero=Dinero-Coca
+if 'chicles' in Comprar:
+    Dinero=Dinero-Chicle
+if 'tortillas' in Comprar:
+    Dinero=Dinero-Tortillas
+print("Te queda ",Dinero," disponible")
