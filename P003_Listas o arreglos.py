@@ -47,7 +47,7 @@ colores3 = ["azul","rojo","amarillo","cafe","verde"]
 #variable.insert(posicion,elemento)
 colores3.insert(1,"Naranja")
 print(colores3)
-"""
+
 #~~~ 8.- ordenear lista con:
 # sort ordena de forma alfabeticamente pero se gaurda ese acomodo en la variable
 colores4 = ["azul","rojo","amarillo","cafe","verde"]
@@ -63,3 +63,12 @@ print(colores5)
 colores6 = ["azul","rojo","amarillo","cafe","verde"]
 print(sorted(colores6))
 print(colores6)
+"""
+#~~~ 9.- Contar elementos de una lista con len() ~~~
+animales = ["perro", "gato", "elefante", "tigre", "león", "jirafa", "cebra", "rinoceronte", "hipopótamo", "oso",
+    "lobo", "zorro", "conejo", "ardilla", "canguro", "koala", "panda", "búho", "águila", "halcón",
+    "serpiente", "cocodrilo", "tortuga", "delfín", "ballena", "tiburón", "pulpo", "calamar", "pingüino", "foca",
+    "caballo", "vaca", "cerdo", "oveja", "cabra", "burro", "ratón", "murciélago", "camello", "lémur",
+    "mapache", "hurón", "chinchilla", "alce", "ciervo", "jabalí", "gorila", "chimpancé", "orangután", "lobo marino"]
+print(len(animales))
+print(animales[49])
