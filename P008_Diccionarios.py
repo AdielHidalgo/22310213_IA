@@ -19,7 +19,7 @@ consulta = teclado1['Modelo'],teclado1['Categoría']
 print(consulta)
 print(muestraTeclado)
 
-#EJERCICIO DE VIDEO
+#EJERCICIO DE VIDEO #48
 #Del diccionario teclado2 del capítulo, muestra los elementos Modelo y Precio con presentación en un print(). El resultado será esto en la consola:
 #Resultado: El modelo Corsair K55 RGB cuesta 59,99 $.
 teclado2 = {
@@ -150,6 +150,7 @@ else:
     print("El producto no tiene un ID especificado. Por favor, introduce un ID")
 """
 # Se puede anidar diccionarios dentro de un diccionario
+"""
 teclados = {
 "teclado1" : {
 	'Categoría': 'Teclados',
@@ -165,3 +166,24 @@ teclados = {
     }
 }
 print(teclados)
+"""
+###Ejercicio del video #50
+#Elimina el diccionario teclado1 entero . De teclado2 elimina las claves 'Categoría' y 'Precio'. 
+#Muestra la última clave ('Modelo') que queda en la consola.
+teclado1 = {
+	'Categoría': 'Teclados',
+	'Modelo': 'HyperX Alloy FPS Pro',
+	'Precio': '89,99',
+}
+
+teclado2 = {
+	'Categoría': 'Teclados',
+	'Modelo': 'Corsair K55 RGB',
+	'Precio': '59,99'
+}
+
+del teclado1
+del teclado2['Categoría']
+teclado2.pop("Precio")
+#print(teclado1)
+print(teclado2)
