@@ -60,3 +60,12 @@ def colores(*args):
 	print('El color', args[1], 'es mi favorito.', 'El color', args[0], 'tampoco está mal.')
 
 colores("Azul","Verde")
+
+###Ejercicio #54 del tema ###
+#Crea una función que realice la suma de cinco números utilizando solo *args. 
+#Debes imprimir el resultado en la consola. La suma no se realizará directamente sobre el print().
+def Suma5(*args):
+	SumaS=args[0]+args[1]+args[2]+args[3]+args[4]
+	print(SumaS)
+
+Suma5(1,3,5,7,8)
