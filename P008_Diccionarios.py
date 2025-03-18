@@ -29,13 +29,13 @@ teclado2 = {
 print("El modelo",teclado2['Modelo'],"cuesta",teclado2['Precio'])
 """
 ## 2.- Diccionarios con bucle for
-
+"""
 teclado1 = {
 	'Categoría': 'Teclados',
 	'Modelo': 'HyperX Alloy FPS Pro',
 	'Precio': '89,99'
 }
-"""
+
 teclado2 = {
 	'Categoría': 'Teclados',
 	'Modelo': 'Corsair K55 RGB',
@@ -73,7 +73,95 @@ print(teclado1['Precio']) #otra forma de escribirlo y obtener el valor es: print
 """
 Categoría = Teclados.
 Modelo = HyperX Alloy FPS Pro.
-Precio = 89,99. """
+Precio = 89,99. 
 
 for x,y in teclado1.items():
     print(x,"=",y+".")
+"""
+
+# 3.- Metodos en los diccionarios
+"""
+teclado1 = {
+	'Categoría': 'Teclados',
+	'Modelo': 'HyperX Alloy FPS Pro',
+	'Precio': '89,99',
+    "ID" : "001"
+}
+
+teclado2 = {
+	'Categoría': 'Teclados',
+	'Modelo': 'Corsair K55 RGB',
+	'Precio': '59,99'
+}
+"""
+# ~len~ sirve para mostrar la cantidad de elementos en un diccionario, tambien se puede sumar
+#print(len(teclado1)+len(teclado2))
+
+# ~pop~ para eliminar un elemento del diccionario
+#teclado1.pop("Categoría")
+#print(teclado1)
+
+# ~del~ sirve para eliminar elementos del diccionario o hasta el mismo diccionario
+#del teclado1['Precio']
+#print(teclado1)
+#del teclado1 "Elimina todo el diccionario"
+#print(teclado1) "Arroja errores porque no lo detecto"
+
+# ~clear~ limpia un diccionador mas no lo elimina solo deja los {} vacios
+#teclado1.clear()
+#print(teclado1)
+
+#Se pueden modificar los datos del diccionario, tambien se pueden añadir elementos o categorias
+#teclado1['Precio'] = "85"
+#teclado1["color"] = "Negro"
+#print(teclado1)
+
+# ~copy~ realiza una copia de un diccionario
+#tecladoCopia = teclado1.copy()
+#print(tecladoCopia)
+
+# ~dict~ tambien se puede usar para copiar un diccionario
+#tecladoCopia = dict(teclado1)
+#print(tecladoCopia)
+#"Tambiens se puede usar para crear nuevos diccionarios"
+#teclado3 = dict(Categoría = "teclados",
+#                Modelo = "Razer Cynosa Chroma",
+#                 Precio = "59.99" )
+#print(teclado3)
+
+#~dict.frontkeys, para autogenerar valores repetitivos
+#teclado3 = ("Categoría","Modelo","Precio")
+#teclado3= dict.fromkeys(teclado3,"Vacío") #muestra las categorias del diccionario pero sin sus elementos y los muestra como "vacio"
+#print(teclado3)
+
+# ~keys~ para mostrar las categorias sin los elementos
+#vistaTeclado = teclado1.keys()
+#print(vistaTeclado)
+
+# ~update~ para añadir elementos al diccionario
+#teclado1.update({"color" : "Negro"})
+#print(teclado1)
+
+#Se puede realizar busqueda en un diccionario con un if
+"""
+if "ID" in teclado2:
+    print("El producto tiene un ID especificado.")
+else:
+    print("El producto no tiene un ID especificado. Por favor, introduce un ID")
+"""
+# Se puede anidar diccionarios dentro de un diccionario
+teclados = {
+"teclado1" : {
+	'Categoría': 'Teclados',
+	'Modelo': 'HyperX Alloy FPS Pro',
+	'Precio': '89,99',
+    "ID" : "001"
+},
+
+"teclado2" : {
+	'Categoría': 'Teclados',
+	'Modelo': 'Corsair K55 RGB',
+	'Precio': '59,99'
+    }
+}
+print(teclados)
