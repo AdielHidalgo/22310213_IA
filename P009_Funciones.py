@@ -43,7 +43,7 @@ def alumnos_profesores(profesor,sustituto,*args):
 lista_alumnos=["Andres","Ana","Alejandro","Andrea"]
 
 alumnos_profesores("Antonio","Amador", *lista_alumnos)
-"""  
+ 
 ###Ejercicio #52 del tema
 #¿Cuántos argumentos se utilizan en cada una de estas llamadas?
 def colores(*args):
@@ -69,3 +69,57 @@ def Suma5(*args):
 	print(SumaS)
 
 Suma5(1,3,5,7,8)
+""" 
+"""
+### kwargs  Cuando queremos utilizar argumentos arbitrarios en diccionarios, *args no nos va a servir, ya que los diccionarios constan de dos partes, las claves y los valores. En este caso, necesitas usar **kwargs.
+#Utilizar diccionarios en las funciones
+def colores (color1, color2, color3, color4):
+	print("Este es el color " + color1 + ".")
+
+colores(color1="rojo", color2="azul", color3="verde", color4="amarillo")
+"""
+#Para dejar los argumentos flexibles sin definir la cantidad usando diccionarios
+#Se usa kwargs
+#En los diccionarios los elementos se llaman "keywords" y sus valores "values"
+
+def colores (**kwargs):
+      print("Este es el color " + kwargs["color1"] + ".")
+
+colores(color1="rojo", color2="azul", color3="verde", color4="amarillo")
+
+#return devuelve un valor 
+def suma (x,y):
+     return x + y
+
+total = suma (10,20)
+print(total)
+
+def resta (x,y):
+     return x - y
+
+total = resta (10,10)
+print(total)
+
+def multiplicacion (x,y):
+     return x * y
+
+total=multiplicacion(10,10)
+print(total)
+
+def division (x,y):
+     return x / y
+
+total = division (10,10)
+print(total)
+
+#Se pueden dejar las funciones vacias con "pass"
+def colores():
+     pass
+
+#Podemos tener un valor por defecto en las funciones y se muestra cada vez que llamemos a la funcion
+
+def colores(color="rojo"):
+     print("Mi color favorito es el: " + color)
+
+colores("azul")
+colores()
